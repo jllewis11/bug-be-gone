@@ -7,6 +7,13 @@
         - Given a detailed feature request, does the function/code produce the intended results of that requirement? 
     - (Optional) - optional feedback regarding feature updates
 
+    Tips: 
+    - Models to use for production 
+        codellama/CodeLlama-34b-Python-hf
+        WizardLM/WizardCoder-Python-34B-V1.0
+        gpt-3.5-turbo-0125
+    - Use a smaller model parameter (7B) because it will be cheaper to inference.
+
 - Generate .py files from LLM generations
     - Converting a JSON response to a test_*.py
         - pytest will recognize test_* files and automatically run those tests.
